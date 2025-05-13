@@ -67,6 +67,19 @@ int main()
 
 	//Apply discount if price is above R200
 	double finalTotal = (total >= 200) ? total * 0.9 : total;
+
+	//Output
+	cout << fixed << setprecision(2);
+	cout << "\nYour order summary:" << endl;
+	cout << "----------------------------------------" << endl;
+	cout << "Item: " << (menuChoice == 1 ? "Pasta" : menuChoice == 2 ? "Burger" : menuChoice == 3 ? "Pizza" : menuChoice == 4 ? "Sandwich" : menuChoice == 5 ? "Fries" : "Drink") << endl;
+	cout << "Quantity: " << quantity << endl;
+	cout << "Price per item: R" << price << endl;
+	cout << "Total before discount: R" << total << endl;
+	cout << "Discount applied: " << (total >= 200 ? "10%" : "0%") << endl;
+	cout << "Final total: R" << finalTotal << endl;
+	cout << "----------------------------------------" << endl;
+	cout << "Thank you for your order!" << endl;
     
     return 0;
 }
