@@ -28,6 +28,13 @@ int main()
 	cout << "4. Sandwich - R" << fixed << setprecision(2) << SANDWICH_PRICE << endl;
 	cout << "5. Fries - R" << fixed << setprecision(2) << FRIES_PRICE << endl;
 	cout << "6. Drink - R" << fixed << setprecision(2) << DRINK_PRICE << endl;
+
+	//Input
+	cout << "\nPlease enter the number of the item you want to order (1-6): ";
+	cin >> menuChoice;
+
+	cout << "\nPlease enter the quantity: ";
+	cin >> quantity;
     
     return 0;
 }
