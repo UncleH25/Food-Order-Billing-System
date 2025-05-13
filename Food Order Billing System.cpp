@@ -61,6 +61,12 @@ int main()
 			cout << "Invalid choice. Please select a valid menu item." << endl;
 			return 1; //Exit the program if invalid choice
 	}
+
+	//Calculate total
+	total = price * quantity;
+
+	//Apply discount if price is above R200
+	double finalTotal = (total >= 200) ? total * 0.9 : total;
     
     return 0;
 }
