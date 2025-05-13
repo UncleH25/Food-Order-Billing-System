@@ -35,6 +35,32 @@ int main()
 
 	cout << "\nPlease enter the quantity: ";
 	cin >> quantity;
+
+	//Switch case to determine price based on menu choice
+	switch (menuChoice)
+	{
+		case 1:
+			price = PASTA_PRICE;
+			break;
+		case 2:
+			price = BURGER_PRICE;
+			break;
+		case 3:
+			price = PIZZA_PRICE;
+			break;
+		case 4:
+			price = SANDWICH_PRICE;
+			break;
+		case 5:
+			price = FRIES_PRICE;
+			break;
+		case 6:
+			price = DRINK_PRICE;
+			break;
+		default:
+			cout << "Invalid choice. Please select a valid menu item." << endl;
+			return 1; //Exit the program if invalid choice
+	}
     
     return 0;
 }
